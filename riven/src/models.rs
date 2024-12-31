@@ -8,7 +8,7 @@
 ///////////////////////////////////////////////
 
 // http://www.mingweisamuel.com/riotapi-schema/tool/
-// Version dfff73340b38e0d7df45f9c60a9b9a4792ad489e
+// Version 3db3221cc1b657c2acddf6ce02428680f38ad9aa
 
 #![allow(missing_docs)]
 
@@ -182,6 +182,8 @@ pub mod clash_v1 {
     pub struct Player {
         #[serde(rename = "summonerId")]
         pub summoner_id: String,
+        #[serde(rename = "puuid")]
+        pub puuid: String,
         #[serde(rename = "teamId")]
         #[serde(skip_serializing_if = "Option::is_none")]
         pub team_id: Option<String>,
