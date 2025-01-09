@@ -126,9 +126,10 @@ pub enum PlatformRoute {
     #[strum(to_string="OC1", serialize="OCE")]
     OC1 = 24,
 
-    /// Philippines
+    /// Philippines, moved into `sg2` on 2025-01-08.
     ///
     /// `32` (riotapi-schema ID/repr)
+    #[deprecated]
     #[strum(to_string="PH2", serialize="PH")]
     PH2 = 32,
 
@@ -137,15 +138,16 @@ pub enum PlatformRoute {
     /// `25` (riotapi-schema ID/repr)
     RU = 25,
 
-    /// Singapore
+    /// Singapore, Thailand, Philippines
     ///
     /// `33` (riotapi-schema ID/repr)
     #[strum(to_string="SG2", serialize="SG")]
     SG2 = 33,
 
-    /// Thailand
+    /// Thailand, moved into `sg2` on 2025-01-08.
     ///
     /// `34` (riotapi-schema ID/repr)
+    #[deprecated]
     #[strum(to_string="TH2", serialize="TH")]
     TH2 = 34,
 
